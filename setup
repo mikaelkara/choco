@@ -1,0 +1,31 @@
+Run Get-ExecutionPolicy If it returns Restricted, then run Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+choco install winrar --version 6.24 -y
+choco install altserver.install --version 1.4.7 -y
+choco install icloud --version 7.21.0.23 -y
+choco install vscode --version 1.83.0 -y
+choco install vscode-python --version 2023.19.12791027 -y
+choco install vscode-prettier --version 10.1.0 -y
+choco install vscode-pylance --version 2023.10.11 -y
+choco install chocolatey-vscode --version 0.7.2 -y
+choco install vscode-jupyter --version 2023.10.1002811100 -y
+choco install anaconda3 --version 2023.7.2 -y
+choco install notepadplusplus --version 8.5.7 -y
+choco install python --version 3.12.0 -y
+choco install microsoft-edge-insider-dev --version 119.0.2132.0 -y
+choco install edgedeflector --version 1.2.3.0 -y
+choco install op --version 2.21.0 -y
+choco install 1password --version 7.9.834 -y
+choco install amd-ryzen-master --version 2.11.2.2659 -y
+choco install amd-ryzen-chipset --version 2023.8.17 -y
+choco install cpu-z.install --version 2.08 -y
+choco install anydesk.install --version 8.0.3 -y
+choco install deepl --version 4.7.0.9554 -y
+choco install whatsapp --version 2.2306.9 -y
+choco install google-drive-file-stream --version 56.0.11.2022 -y
+choco install git --version 2.42.0 -y
+choco install github --version 3.2.0.20181119 -y
+choco install gh --version 2.36.0 -y
+choco install internet-download-manager --version 6.41.20 -y
